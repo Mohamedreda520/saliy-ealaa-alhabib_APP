@@ -432,14 +432,16 @@ updateCounterDisplay();
 
       if (document.body.classList.contains("dark-them")) {
         btnText.innerHTML = "Light";
-        faicon.innerHTML = "&#9788;"
+        faicon.innerHTML = "&#9788;";
+       
         counterDisplay.style.backgroundColor = "white";
         counterDisplay.style.color = "black";
       } else {
         btnText.innerHTML = "Dark";
         faicon.innerHTML = "&#9790;";
         counterDisplay.style.backgroundColor = "black";
-        cocounterDisplayunt.style.color = "white";
+        counterDisplay.style.color = "white";
+       
       }
     });
     // more knowledge
