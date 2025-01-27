@@ -121,6 +121,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
       }
 
       .container .content {
@@ -334,22 +339,15 @@
         الَّذِينَ آَمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴿
       </h1>
       <div class="btns flex">
-        <!-- <div class="item-btn">الاستغفار</div>
-        <div class="item-btn">الصلاة</div>
-        <div class="item-btn">التسبيح</div> -->
-
         <button class="item-btn" id="tasbeeh-btn">تسبيح</button>
         <button class="item-btn" id="salat-btn">صلاة</button>
         <button class="item-btn" id="istighfar-btn">استغفار</button>
       </div>
       <div class="count">
-        <!-- <div class="count-item" id="count">0</div> -->
+        
         <div class="count-display" id="counter">0</div>
 
         <div class="btns-other flex">
-          <!-- <div class="btn-plus" id="btn-plus">+</div>
-          <div class="btn-clear" id="btn-clear">عد من جديد</div> -->
-
           <button class="btn-plus" id="add-btn">+</button>
           <button class="btn-clear" id="reset-btn">عد من جديد</button>
         </div>
@@ -434,15 +432,14 @@ updateCounterDisplay();
 
       if (document.body.classList.contains("dark-them")) {
         btnText.innerHTML = "Light";
-        faicon.innerHTML = "&#9788;";
-
-        count.style.backgroundColor = "white";
-        count.style.color = "black";
+        faicon.innerHTML = "&#9788;"
+        counterDisplay.style.backgroundColor = "white";
+        counterDisplay.style.color = "black";
       } else {
         btnText.innerHTML = "Dark";
         faicon.innerHTML = "&#9790;";
-        count.style.backgroundColor = "black";
-        count.style.color = "white";
+        counterDisplay.style.backgroundColor = "black";
+        cocounterDisplayunt.style.color = "white";
       }
     });
     // more knowledge
